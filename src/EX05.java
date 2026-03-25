@@ -10,11 +10,9 @@
             System.out.print("Quanto você conseguiu guardar este mês?  ");
             double guardado = leitor.nextDouble();
 
-            // Lógica de verificação
             if (guardado >= meta) {
                 System.out.println("Parabéns! Você conseguiu atingir o objetivo!");
 
-                // Verificação extra: se ultrapassou a meta
                 if (guardado > meta) {
                     double sobra = guardado - meta;
                     System.out.printf("Você superou a meta em R$ ", sobra);
